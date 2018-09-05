@@ -9,10 +9,28 @@ body {
   position: relative;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
 .logo {
   display: inline-block;
 }
 
 .cutlery-logo {
-  width: 200px;
+  width: 250px;
+}
+
+.carousel-logo {
+  height: 100%;
+  position: absolute;
+
+}
+
+.carousel-inner > .item > img {
+  width: 100%;
 }
