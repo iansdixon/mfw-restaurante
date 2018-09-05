@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:300,400,700');
+:root {
+  --raleway: 'Raleway', sans-serif;
+  --Lobster: 'Lobster', sans-serif;
+}
+
+body {
+  background: #000;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.cutlery-logo {
+  width: 200px;
+}
