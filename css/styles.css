@@ -2,6 +2,9 @@
 :root {
   --raleway: 'Raleway', sans-serif;
   --Lobster: 'Lobster', sans-serif;
+  --orange: #f7472a;
+  --lightshadow: rgba(0,0,0,.2);
+  --darkshadow: rgba(0,0,0,.2);
 }
 
 body {
@@ -25,6 +28,10 @@ header {
   width: 250px;
 }
 
+.farm-btn {
+  background-color: var(--orange);
+}
+
 .carousel-caption {
   height: 100%;
   position: absolute;
@@ -32,6 +39,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .carousel-inner > .item > img {
@@ -58,23 +66,24 @@ header {
 
 .back-date {
   font-family: var(--Lobster);
-  font-size: 200px;
+  font-size: 170px;
   font-weight: 700;
   opacity: 0.2;
   position: absolute;
 }
 
+#story, #review, #menu, #contact {
+  height: 100vh;
+}
+
 #review {
-  height: 500px;
   background-color: red;
 }
 
 #menu {
-  height: 500px;
   background-color: blue;
 }
 
 #contact {
-  height: 500px;
   background-color: green;
 }
