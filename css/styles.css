@@ -25,12 +25,26 @@ header {
   width: 250px;
 }
 
-.carousel-logo {
+.carousel-caption {
   height: 100%;
   position: absolute;
-
+  top 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-inner > .item > img {
   width: 100%;
+}
+
+.story-header {
+  font-family: var(--Lobster);
+  font-size: 50px;
+  color: red;
+}
+
+.story-subhead {
+  font-family: var(--Raleway);
+  font-size: 20px;
 }
