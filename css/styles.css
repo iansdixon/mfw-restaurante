@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #000;
+  /* background: #000; */
   position: relative;
 }
 
@@ -40,11 +40,41 @@ header {
 
 .story-header {
   font-family: var(--Lobster);
-  font-size: 50px;
+  font-size: 80px;
   color: red;
 }
 
 .story-subhead {
-  font-family: var(--Raleway);
-  font-size: 20px;
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-date {
+  font-family: var(--Lobster);
+  font-size: 200px;
+  font-weight: 700;
+  opacity: 0.2;
+  position: absolute;
+}
+
+#review {
+  height: 500px;
+  background-color: red;
+}
+
+#menu {
+  height: 500px;
+  background-color: blue;
+}
+
+#contact {
+  height: 500px;
+  background-color: green;
 }

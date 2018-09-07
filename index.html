@@ -64,8 +64,20 @@
 			</div> <!-- end carousel -->
 		</div>  <!-- home end -->
 		<div id="story" class="row">
-				<h1 class="story-header">Our Story</h1>
-				<h3 class="story-subhead">One man. One Dream</h3>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<h1 class="story-header cent">Our Story</h1>
+				<h3 class="story-subhead cent">One man. One Dream.</h3>
+			</div>
+			<div class="col-md-5">
+				<h1 class="back-date cent">1989</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium deleniti culpa eaque, id fugit saepe architecto modi neque itaque minus quis dolor, dolore similique, deserunt inventore adipisci maiores ad cumque.</p>
+				<p>Lorem ipsum dolor sit amet Voluptates aperiam molestiae, accusamus laboriosam numquam. Velit perferendis ipsam deleniti eos error, eum tenetur, autem eligendi accusamus, harum cum veniam recusandae voluptatibus.</p>
+				<p>Lorem ipsum dolor sit amet. Ea rerum, nemo recusandae assumenda officiis esse quis aliquam facere, minima earum asperiores nesciunt mollitia necessitatibus quos?</p>
+				<p>Quidem cum, in, reiciendis fugiat, eius repellat molestiae aut quas magni libero doloremque corrupti aliquam ullam asperiores nam facere exercitationem perspiciatis voluptas!</p>
+			</div>
+			<div class="col-md-1"></div>
+
 		</div>
 		<div id="review" class="row">
 
@@ -80,7 +92,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$('body').scrollspy({ target: '#navbar-scroll' });
+		$(document).ready(function() {
+			$('body').scrollspy({ target: '#navbar-scroll', offset: 50 });
+			$(".navbar a").on('click', function(event) {
+	        if (this.hash !== "") {
+	          event.preventDefault();
+	          const hash = this.hash;
+	          $('html, body').animate({
+	            scrollTop: $(hash).offset().top
+	          }, 800, function(){
+	            window.location.hash = hash;
+	          });
+	        }
+	      });
+			});
 	</script>
 </body>
 </html>
