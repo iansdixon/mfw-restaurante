@@ -12,15 +12,18 @@
 
 	<div class="container-fluid">
 		<header>
-			<div class="logo">
-				<img src="img/name-01.png" alt="Restaurante">
-			</div>
-			<nav id="navbar-scroll" class="navbar pull-right">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="fa fa-bars" aria-hidden="true"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbar-collapse">
+
+			<nav id="navbar-scroll" class="navbar">
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars" aria-hidden="true"></span>
+					</button>
+					<div class="logo">
+						<img src="img/name-01.png" alt="Restaurante">
+					</div>
+				</div>
+				<div class="collapse navbar-collapse pull-right" id="navbar-collapse">
 					<ul class="nav nav-pills" role="tablist">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#story">Our Story</a></li>
@@ -76,7 +79,7 @@
 		<div id="story" class="row">
 			<div class="col-md-10 container-border">
 				<div class="col-md-6 story-left">
-					<h1 class="story-header">Our Story</h1>
+					<h1 class="section-header">Our Story</h1>
 					<p class="story-subhead font-bold">One man. One Dream.</p>
 				</div>
 				<div class="col-md-6 story-right">
@@ -91,12 +94,117 @@
 		</div>
 		<div id="review" class="row">
 			<div class="col-md-8 review-info">
-				<h2 class="review-header">Fresno Bee</h2>
+				<h2 class="section-header">Fresno Bee</h2>
 				<p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint possimus non totam quos ut eum rem magni quod neque minima. Labore ad natus doloribus dignissimos.</p>
 			</div>
 		</div>
 		<div id="menu" class="row">
+			<div class="col-md-12">
+				<h2 class="section-header text-center">Menu</h2>
+			</div>
+			<div class="col-md-12">
 
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+  		 	 <li role="presentation" class="active"><a href="#appetizer" aria-controls="appetizer" role="tab" data-toggle="tab">Appetizer</a></li>
+  			  <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch</a></li>
+  			  <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
+  		  	<li role="presentation"><a href="#dessert" aria-controls="dessert" role="tab" data-toggle="tab">Dessert</a></li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="appetizer">
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/bruschetta.jpg" alt="bruschetta">
+			    		<h3>app 1</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, dignissimos, in. Alias velit libero laudantium sapiente fugiat aliquid ex repellendus ipsum. Quo qui sapiente voluptates?</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dip.jpg" alt="dip">
+			    		<h3>app 2</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit qui provident dolorum laudantium iste, itaque esse doloribus sapiente libero, ipsam laborum, odit non fugiat!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/eggplant.jpg" alt="eggplant">
+			    		<h3>app 3</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat assumenda, voluptate nisi ullam culpa accusantium sint, ducimus hic mollitia non necessitatibus laudantium quod, modi!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/meat.jpg" alt="meat">
+			    		<h3>app 4</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima quasi reiciendis? Recusandae voluptatibus molestias, temporibus modi possimus ratione consectetur, quisquam laboriosam nam cumque eum?</p>
+			    	</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="lunch">
+						<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/lunch1.jpg" alt="lunch">
+			    		<h3>app 1</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, dignissimos, in. Alias velit libero laudantium sapiente fugiat aliquid ex repellendus ipsum. Quo qui sapiente voluptates?</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/lunch2.jpg" alt="lunch">
+			    		<h3>app 2</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit qui provident dolorum laudantium iste, itaque esse doloribus sapiente libero, ipsam laborum, odit non fugiat!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/lunch3.jpg" alt="lunch">
+			    		<h3>app 3</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat assumenda, voluptate nisi ullam culpa accusantium sint, ducimus hic mollitia non necessitatibus laudantium quod, modi!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/lunch4.jpg" alt="lunch">
+			    		<h3>app 4</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima quasi reiciendis? Recusandae voluptatibus molestias, temporibus modi possimus ratione consectetur, quisquam laboriosam nam cumque eum?</p>
+			   	 </div>
+					</div>
+  			  <div role="tabpanel" class="tab-pane" id="dinner">
+						<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dinner1.jpg" alt="dinner">
+			    		<h3>app 1</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, dignissimos, in. Alias velit libero laudantium sapiente fugiat aliquid ex repellendus ipsum. Quo qui sapiente voluptates?</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dinner2.jpg" alt="dinner">
+			    		<h3>app 2</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit qui provident dolorum laudantium iste, itaque esse doloribus sapiente libero, ipsam laborum, odit non fugiat!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dinner3.jpg" alt="dinner">
+			    		<h3>app 3</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat assumenda, voluptate nisi ullam culpa accusantium sint, ducimus hic mollitia non necessitatibus laudantium quod, modi!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dinner4.jpg" alt="dinner">
+			    		<h3>app 4</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima quasi reiciendis? Recusandae voluptatibus molestias, temporibus modi possimus ratione consectetur, quisquam laboriosam nam cumque eum?</p>
+  			  	</div>
+					</div>
+  			  <div role="tabpanel" class="tab-pane" id="dessert">
+						<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dessert1.jpg" alt="dessert">
+			    		<h3>app 1</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, dignissimos, in. Alias velit libero laudantium sapiente fugiat aliquid ex repellendus ipsum. Quo qui sapiente voluptates?</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dessert2.jpg" alt="dessert">
+			    		<h3>app 2</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit qui provident dolorum laudantium iste, itaque esse doloribus sapiente libero, ipsam laborum, odit non fugiat!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dessert3.jpg" alt="dessert">
+			    		<h3>app 3</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat assumenda, voluptate nisi ullam culpa accusantium sint, ducimus hic mollitia non necessitatibus laudantium quod, modi!</p>
+			    	</div>
+			    	<div class="col-sm-3">
+			    		<img class="img-responsive" src="img/dessert4.jpg" alt="dessert">
+			    		<h3>app 4</h3>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima quasi reiciendis? Recusandae voluptatibus molestias, temporibus modi possimus ratione consectetur, quisquam laboriosam nam cumque eum?</p>
+  			  	</div>
+					</div>
+			  </div>
+
+			</div>
 		</div>
 		<div id="contact" class="row"></div>
 	</div>
@@ -108,17 +216,38 @@
 		$(document).ready(function() {
 			$('body').scrollspy({ target: '#navbar-scroll', offset: 50 });
 			$(".navbar a").on('click', function(event) {
-	        if (this.hash !== "") {
-	          event.preventDefault();
-	          const hash = this.hash;
-	          $('html, body').animate({
-	            scrollTop: $(hash).offset().top
-	          }, 800, function(){
-	            window.location.hash = hash;
-	          });
-	        }
-	      });
-			});
+	     if (this.hash !== "") {
+	      event.preventDefault();
+	      const hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	        window.location.hash = hash;
+    		});
+	   	 }
+	   	});
+
+			$('#a[href="#appetizer"]').click(function (e) {
+	  		e.preventDefault()
+			  $(this).tab('show')
+			})
+
+			$('#a[href="#lunch"]').click(function (e) {
+	  		e.preventDefault()
+			  $(this).tab('show')
+			})
+
+			$('#a[href="#dinner"]').click(function (e) {
+	  		e.preventDefault()
+			  $(this).tab('show')
+			})
+
+			$('#a[href="#dessert"]').click(function (e) {
+	  		e.preventDefault()
+			  $(this).tab('show')
+			})
+		});
+
 	</script>
 </body>
 </html>
