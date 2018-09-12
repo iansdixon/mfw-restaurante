@@ -5,7 +5,7 @@
   --orange: #f7472a;
   --white: #fafafa;
   --lightshadow: rgba(0,0,0,.2);
-  --darkshadow: rgba(0,0,0,.2);
+  --darkshadow: rgba(0,0,0,.6);
 }
 
 .font-bold {
@@ -131,7 +131,7 @@ header {
 }
 
 #menu {
-  background-color: blue;
+  background: url('img/black_linen.png');
 }
 
 #contact {
