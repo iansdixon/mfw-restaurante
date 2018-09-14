@@ -6,6 +6,7 @@
   --white: #fafafa;
   --lightshadow: rgba(0,0,0,.2);
   --darkshadow: rgba(0,0,0,.6);
+  --lightorange: #ff5b2d;
 }
 
 .font-bold {
@@ -13,26 +14,17 @@
 }
 
 body {
-  /* background: #000; */
   position: relative;
+  font-family: var(--raleway);
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
+.navbar-brand {
+  padding: 10px 15px;
 }
 
 span.fa.fa-bars {
   color: var(--white);
   font-size: 25px;
-  text-shadow: 1px 1px 3px var(--darkshadow);
-}
-
-.logo {
-  display: inline-block;
 }
 
 .cutlery-logo {
@@ -93,7 +85,6 @@ span.fa.fa-bars {
 }
 
 .story-subhead {
-  font-family: var(--raleway);
   font-size: 26px;
   margin-left: -30px;
 }
@@ -123,23 +114,16 @@ span.fa.fa-bars {
   text-align: center;
 }
 
-.review-header {
-  color: var(--orange);
-  font-family: var(--lobster);
-  font-size: 60px;
-  text-shadow: 1px 1px 3px var(--darkshadow);
-}
-
 .review-body {
   color: var(--white);
   font-size: 20px;
-  font-family: var(--raleway);
 }
 
 #menu {
   background: url('../img/black_linen.png');
   background-size: cover;
   flex-direction: column;
+  height: 100%;
 }
 
 #menu .section-header {
@@ -152,8 +136,35 @@ span.fa.fa-bars {
   background: var(--white);
 }
 
-#contact {
-  background-color: green;
+.tab-container {
+  margin-top: 50px;
 }
 
-@media screen and (max-wdith: 763);
+.tab-container a {
+  color: ver(--white);
+}
+
+.tab-container {
+  padding: (30px 0px);
+}
+
+#contact {
+  background-color: var(--lightorange);
+}
+
+.form-titles {
+  color: var(--white);
+}
+
+@media screen and (max-wdith: 763) {
+  #menu {
+    height: 100%;
+  }
+  .nav-bar-brand {
+    margin-top: 100%
+  }
+
+  .tab-pane {
+
+  }
+}
